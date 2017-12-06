@@ -1,9 +1,10 @@
 import person
 from robot import Robot
+from school import *
 
 
-p = person.Person("srs")
-p.say_hi()
+# p = person.Person("srs")
+# p.say_hi()
 
 
 
@@ -23,3 +24,13 @@ p.say_hi()
 #
 # Robot.how_many()
 
+t = Teacher('Mrs. Shrividya', 40, 30000)
+s = Student('Swaroop', 25, 75)
+
+# prints a blank line
+print
+
+members = [t, s]
+for member in members:
+    # Works for both Teachers and Students
+    member.tell()
