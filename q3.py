@@ -7,3 +7,13 @@
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # Consider use dict()
+
+number = int(input("Enter your number :"))
+dict = {}
+
+print(dict,"is typeof",type(dict))
+
+for i in range(1,number+1):
+    dict[i] = i*i
+
+print(dict)
