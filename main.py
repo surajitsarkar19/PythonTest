@@ -1,11 +1,13 @@
 import person
 from robot import Robot
 from school import *
+from person import Person
+from iterator import PowTwo
 
 
-# p = person.Person("srs")
-# p.say_hi()
-
+p = Person("srs")
+p.say_hi()
+print(Person.msg)
 
 
 # droid1 = Robot("R2-D2")
@@ -24,13 +26,16 @@ from school import *
 #
 # Robot.how_many()
 
-t = Teacher('Mrs. Shrividya', 40, 30000)
-s = Student('Swaroop', 25, 75)
+# t = Teacher('Mrs. Shrividya', 40, 30000)
+# s = Student('Swaroop', 25, 75)
+#
+# # prints a blank line
+# print
+#
+# members = [t, s]
+# for member in members:
+#     # Works for both Teachers and Students
+#     member.tell()
 
-# prints a blank line
-print
-
-members = [t, s]
-for member in members:
-    # Works for both Teachers and Students
-    member.tell()
+for i in PowTwo(5):
+    print(i)
