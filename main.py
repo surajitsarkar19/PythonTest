@@ -7,7 +7,8 @@ from iterator import PowTwo
 
 p = Person("srs")
 p.say_hi()
-print(Person.msg)
+print("msg from Person class : {}".format(Person.msg))
+print("msg from Person instance : {}".format(p.msg))
 
 
 # droid1 = Robot("R2-D2")

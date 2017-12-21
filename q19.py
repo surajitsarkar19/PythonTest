@@ -16,3 +16,16 @@
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # We use itemgetter to enable multiple sort keys.
+
+import operator
+
+from operator import itemgetter, attrgetter
+
+l = []
+while True:
+    s = raw_input()
+    if not s:
+        break
+    l.append(tuple(s.split(",")))
+
+print sorted(l, key=itemgetter(0, 1, 2))

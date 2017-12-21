@@ -3,3 +3,6 @@
 #
 # Hints:
 # Consider use yield
+
+
+max = input("Enter max number")
